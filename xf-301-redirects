@@ -1,7 +1,7 @@
 // To forward the old domain to the new domain;
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} !^www\.olddomain\.gen.tr
+RewriteCond %{HTTP_HOST} !^www\.olddomain\.com
 RewriteRule (.*) http://www.newdomain.gen.tr/$1 [R=301,L]
 
 // To redirect to the forum directory, different from the main directory;
