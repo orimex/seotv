@@ -2,10 +2,10 @@
 
 RewriteEngine on
 RewriteCond %{HTTP_HOST} !^www\.eskidomain\.gen.tr
-RewriteRule (.*) http://www.yenidomain.gen.tr/$1 [R=301,L]
+RewriteRule (.*) http://www.newdomain.gen.tr/$1 [R=301,L]
 
 // To redirect to the forum directory, different from the main directory;
 
 RewriteEngine on]
-RewriteCond %{HTTP_HOST} !^www\.xenforo\.gen.tr
-RewriteRule (.*) http://www.xenforo.gen.tr/forum$1 [R=301,L]
+RewriteCond %{HTTP_HOST} !^www\.domain\.com
+RewriteRule (.*) http://www.domain.com/forum$1 [R=301,L]
