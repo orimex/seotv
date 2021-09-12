@@ -1,0 +1,6 @@
+add_filter( 'avatar_defaults', 'yeni_gravatar' );
+function yeni_gravatar ($avatar_defaults) {
+$myavatar = 'http://www.siteniz.com/wp-content/uploads/sectigin-resim.png';
+$avatar_defaults[$myavatar] = "Yeni Gravatar";
+return $avatar_defaults;
+}
