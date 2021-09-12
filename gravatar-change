@@ -4,15 +4,3 @@ $myavatar = 'http://www.siteniz.com/wp-content/uploads/sectigin-resim.png';
 $avatar_defaults[$myavatar] = "Yeni Gravatar";
 return $avatar_defaults;
 }
-
-# BEGIN WordPress
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
-RewriteRule ^category/(.*) /kategori/$1 [L,R=301]
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-</IfModule>
-# END WordPress
